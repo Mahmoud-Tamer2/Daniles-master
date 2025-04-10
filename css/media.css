@@ -1,0 +1,88 @@
+
+/* media for responsive nav */
+@media screen and (max-width: 991.5px) {
+  /* start nav */
+  .nav-link {
+    color: var(--dark-black) !important;
+    background-color: white !important;
+    padding-left: 1.25rem;
+    letter-spacing: 0.4px;
+  }
+  ul.navbar-nav {
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    bottom: 0;
+    left: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .navbar-toggler {
+    border: 0 solid transparent;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  /* end nav */
+}
+
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-weight: 200;
+    font-size: 30px;
+  }
+  h1 #element {
+    font-weight: 400;
+  }
+  nav .container-md {
+    width: 100% !important;
+  }
+  /* home */
+  #home {
+    background-attachment: scroll;
+  }
+  /* testmonial */
+  .carousel-inner {
+    width: 100% !important;
+  }
+  /* portfolio */
+  #portfolio {
+    padding: 4.375rem 0;
+  }
+  .nav-link {
+    margin-left: 0;
+  }
+  #portfolio > .container-md {
+    padding: 0;
+  }
+  /* team */
+  #team .row {
+    padding: 4.375rem 0;
+  }
+  #team {
+    padding: 4.375rem 0;
+  }
+  /* contact */
+  .main-contaent-work {
+    padding-inline: 0;
+  }
+  #work {
+    padding: 4.375rem 0.75rem;
+  }
+  .about-picture::after {
+    content: "";
+    position: absolute;
+    background-repeat: repeat;
+    background-image: url(../imges/dots.png);
+    width: 80%;
+    height:50%;
+    bottom: 35%;
+    z-index: -1;
+    left: 1.25rem;
+  }
+}
